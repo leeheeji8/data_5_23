@@ -1,0 +1,11 @@
+<h1> 데이터를 불러옵시다.</h1>
+
+<% @data.each do |x| %>
+이름 : <%=x.name%><br>
+학교 : <%=x.school%><br>
+<a href="/home/destroy_one/<%=x.id%>">삭제</a><br>
+=======================================<br>
+<% end %>
+
+<a href="/">자료추가</a><br>
+<a href="/home/destroy_all">모두삭제</a><br>
